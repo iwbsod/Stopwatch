@@ -15,6 +15,15 @@ const displayStopwatch = () => {
   minutesElement.innerHTML = minutes.toString().padStart(2, '0')
 }
 
+const resetStopwatch = () => {
+  resetButton.addEventListener('click', () => {
+    milliseconds = 0
+    seconds = 0
+    minutes = 0
+    displayStopwatch()
+  })
+}
+
 const startStopwatch = () => {
   resetStopwatch()
   startButton.addEventListener('click', () => {
