@@ -19,6 +19,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 550px;
 }
 
 .main-container .title {
@@ -32,27 +34,35 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  position: relative;
+  width: 600px;
 }
 
 .stopwatch-container .stopwatch-numbers {
   font-size: 100px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.stopwatch-numbers .time {
+  width: 190px;
+  display: flex;
+  justify-content: center;
 }
 
 .stopwatch-container .stopwatch-label {
   width: 100%;
-  padding-left: 35px;
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
+  left: 30px;
 }
 
 .stopwatch-label .minutes-label {
-  margin-right: 135px;
+  margin-right: 145px;
 }
 
 .stopwatch-label .seconds-label {
-  margin-right: 120px;
+  margin-right: 125px;
 }
 
 .main-container .buttons-container {
@@ -72,7 +82,7 @@ body {
   cursor: pointer;
 }
 
-.buttons-container .resume-button {
+.buttons-container .start-button {
   background-color: #fd46fd;
 }
 
